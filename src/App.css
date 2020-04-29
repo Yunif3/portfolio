@@ -36,3 +36,15 @@
     transform: rotate(360deg);
   }
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* TODO remove later */
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 500px;
+}
