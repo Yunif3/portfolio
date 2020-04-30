@@ -1,7 +1,9 @@
 import React from "react";
 import logo from "./logo.svg";
 import "./App.css";
-import Header from "./Components/Header";
+import Header from "./Components/Header/Header";
+import Main from "./Components/Main/Main";
+
 function App() {
   return (
     <div className="App">
@@ -21,7 +23,7 @@ function App() {
         </a>
       </header> */}
       <body>
-        <img src={logo} className="App-logo" alt="logo" />
+        <Main next="#experiences"/>
         <section id="experiences">A</section>
         <section id="projects">B</section>
         <section id="awards">C</section>
