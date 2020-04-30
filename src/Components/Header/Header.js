@@ -36,7 +36,7 @@ class Navbar extends Component {
         });
 
         return (
-            <nav id="nav-wrap">
+            <nav id="nav-wrap" onLoad={() => this.handle_icon_click()}>
                 {/* <a className="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
                 <a className="mobile-btn" href="#home" title="Hide navidation">Hide navigation</a> */}
                 <ul id="navlist" className="nav-item" ref={this.navlistRef}>
