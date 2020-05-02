@@ -74,6 +74,11 @@
   padding: 1%;
   margin: 0.5%;
   flex-basis: 8vh;
+  transition: flex-basis ease-in 0.4s;
+}
+
+.block:hover {
+  flex-basis: 10vh;
 }
 
 .icon {

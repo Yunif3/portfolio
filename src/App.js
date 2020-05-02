@@ -1,8 +1,8 @@
 import React from "react";
-import logo from "./logo.svg";
 import "./App.css";
 import Header from "./Components/Header/Header";
 import Main from "./Components/Main/Main";
+import Projects from "./Components/Projects/Projects"
 
 function App() {
   return (
@@ -25,7 +25,7 @@ function App() {
       <body>
         <Main next="#experiences"/>
         <section id="experiences">A</section>
-        <section id="projects">B</section>
+        <Projects id="projects"/>
         <section id="awards">C</section>
       </body>
     </div>

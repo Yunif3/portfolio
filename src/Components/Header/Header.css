@@ -6,11 +6,13 @@
   position: fixed;
   top: 0;
   right: 0;
+  z-index: 100;
 }
 
 .nav-item {
   height: 2.5em;
   margin: 0 0.5em;
+  opacity: 0.9;
 }
 
 #nav-icon {
