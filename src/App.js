@@ -4,6 +4,7 @@ import Header from "./Components/Header/Header";
 import Main from "./Components/Main/Main";
 import Experiences from "./Components/Experiences/Experiences"
 import Projects from "./Components/Projects/Projects"
+import Awards from "./Components/Awards/Awards"
 
 function App() {
   return (
@@ -27,7 +28,7 @@ function App() {
         <Main id="home" next="#experiences"/>
         <Experiences id="experiences"/>
         <Projects id="projects"/>
-        <section id="awards">C</section>
+        <Awards id="awards"/>
       </body>
     </div>
   );
