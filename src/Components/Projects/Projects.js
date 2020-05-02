@@ -50,6 +50,7 @@ class Projects extends Component {
     let stacks = ["C++", "HTML", "Python"];
     return (
       <div className="projects-wrapper">
+        <div id="section-title">Projects</div>
         <ProjectBlock
           proj_link="https://www.temp.com"
           code_link="https://www.google.com"
