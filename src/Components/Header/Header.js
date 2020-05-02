@@ -15,6 +15,7 @@ class Navbar extends Component {
         this.setState({
             current_sec: sec,
         });
+        console.log(sec);
     }
 
     handle_icon_click() {

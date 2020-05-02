@@ -3,6 +3,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 30vh 0;
 }
 .indent {
   margin-left: 30%;
@@ -106,6 +107,7 @@
 
 .project-block:first-child {
   border-top: 0;
+  border-bottom: 0;
   border-top-right-radius: 0;
   border-top-left-radius: 0;
 }
@@ -142,9 +144,9 @@
 }
 
 @font-face {
-    font-family: Modeka;
-    src: url(Modeka.otf);
-  }
+  font-family: Modeka;
+  src: url(Modeka.otf);
+}
 
 .info {
   height: 100%;
@@ -200,4 +202,3 @@
   width: 100;
   text-align: left;
 }
-

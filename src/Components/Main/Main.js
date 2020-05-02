@@ -19,7 +19,7 @@ class LinkBlock extends Component {
 class Main extends Component {
     render () {
         return (
-            <div className="main-wrapper">
+            <div id={this.props.id} className="main-wrapper">
                 <div className="center-page">
                     <div id="name-wrapper">
                         <h1 id="name">Yunsoo Kim</h1>

@@ -2,6 +2,7 @@ import React from "react";
 import "./App.css";
 import Header from "./Components/Header/Header";
 import Main from "./Components/Main/Main";
+import Experiences from "./Components/Experiences/Experiences"
 import Projects from "./Components/Projects/Projects"
 
 function App() {
@@ -23,8 +24,8 @@ function App() {
         </a>
       </header> */}
       <body>
-        <Main next="#experiences"/>
-        <section id="experiences">A</section>
+        <Main id="home" next="#experiences"/>
+        <Experiences id="experiences"/>
         <Projects id="projects"/>
         <section id="awards">C</section>
       </body>

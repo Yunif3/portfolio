@@ -49,7 +49,7 @@ class Projects extends Component {
   render() {
     let stacks = ["C++", "HTML", "Python"];
     return (
-      <div className="projects-wrapper">
+      <div id={this.props.id} className="projects-wrapper">
         <div id="section-title">Projects</div>
         <ProjectBlock
           proj_link="https://www.temp.com"
