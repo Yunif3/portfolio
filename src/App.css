@@ -42,9 +42,12 @@ html {
 }
 
 /* TODO remove later */
-section {
+footer {
+  height: 8vh;
+  width: 100%;
+  background-color: black;
+  color: white;
   display: flex;
-  align-items: center;
   justify-content: center;
-  height: 500px;
+  align-items: center;
 }
