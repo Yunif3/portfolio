@@ -13,6 +13,15 @@
     list-style-type: none;
 }
 
+#awards-title {
+  font-family: Modeka;
+  font-size: 10em;
+  background: linear-gradient(to right, #743ad5 0%, #d53a9d 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 1vh;
+}
+
 .award {
     padding: 1% 1%;
     margin: 3vh 0;

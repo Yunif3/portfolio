@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import "./Projects.css";
 import a from "./poly.png";
 import CodeIcon from "./code_icon.png";
+import data from "../../data.json"
+
 class ProjectBlock extends Component {
     // Later add a feature to filter through different skillset
   render() {
@@ -9,6 +11,7 @@ class ProjectBlock extends Component {
     let stack_list = stacks.map((stack) => {
       return <li className="stack-item shadow">{stack}</li>;
     });
+    let proj_label = this.props.proj_link == null ? <div className="label">N/A</div> : <div className="label">View Project</div>;
     // TODO remove or use the counter in css
     let indent = this.props.indent ? "project-block indent" : "project-block";
     return (
@@ -18,7 +21,7 @@ class ProjectBlock extends Component {
           <a className="link" href={this.props.proj_link}>
             <div className="shadow">
                 <img className="preview hexagon" src={this.props.proj_img}></img>
-                <div className="label">View Project</div>
+                {proj_label}
             </div>
           </a>
           <a className="link" href={this.props.code_link}>
@@ -45,39 +48,28 @@ class ProjectBlock extends Component {
   }
 }
 
+// TODO FIXME change the picture to show the image of project
 class Projects extends Component {
   render() {
-    let stacks = ["C++", "HTML", "Python"];
+    let blocks = data["projects"].map((info) => {
+      let desc_list = info.description.map((item) => {
+          return (<li>{item}</li>);
+      });
+      return (
+        <ProjectBlock
+        proj_link= {info.proj_link}
+        code_link= {info.code_link}
+        proj_img= {a}
+        title= {info.title}
+        stacks= {info.stacks}
+        description= {desc_list}
+        />
+      );
+    });
     return (
       <div id={this.props.id} className="projects-wrapper">
         <div id="section-title">Projects</div>
-        <ProjectBlock
-          proj_link="https://www.temp.com"
-          code_link="https://www.google.com"
-          proj_img={a}
-          title="Logical Calculator"
-          stacks={stacks}
-          description="this is some random description about the project. blah blah blah blahbl abiohjsaoidhfoi ewio"
-        ></ProjectBlock>
-        <ProjectBlock
-          
-          proj_link="https://www.temp.com"
-          code_link="https://www.google.com"
-          proj_img={a}
-          title="Logical Calculator"
-          stacks={stacks}
-          description="this is some random description about the project. blah blah blah blahbl abiohjsaoidhfoi ewio"
-        ></ProjectBlock>
-        <ProjectBlock
-          proj_link="https://www.temp.com"
-          code_link="https://www.google.com"
-          proj_img={a}
-          title="Logical Calculator"
-          stacks={stacks}
-          description="this is some random description about the project. blah blah blah blahbl abiohjsaoidhfoi ewio"
-        ></ProjectBlock>
-        <main>
-</main>
+        {blocks}
       </div>
     );
   }

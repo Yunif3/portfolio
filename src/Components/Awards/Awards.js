@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import "./Awards.css"
+import data from "../../data.json"
 
 class AwardBlock extends Component {
     render () {
@@ -14,16 +15,18 @@ class AwardBlock extends Component {
 
 class Awards extends Component {
     render () {
+        let blocks = data["awards"].map((info) => {
+            return (
+              <AwardBlock
+                title={info.title}
+                description={info.description}
+              />
+            );
+          });
         return (
             <ul id={this.props.id} className="awards-wrapper">
-                <AwardBlock
-                    title="Siemens Semifinalist some"
-                    description="won blah balbh sakdjmfoejs iojoiajw a a a a a a eoirjewoinriowenhr"
-                />
-                <AwardBlock
-                    title="Siemens Semifinalist"
-                    description="won blah balbh sakdjmfoejs iojoiajw eoirjewoinriowenhr"
-                />
+                <div id="awards-title">Achievements</div>
+                {blocks}
             </ul>
         );
     }

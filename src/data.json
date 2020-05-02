@@ -1,0 +1,147 @@
+{
+    "experiences": [
+        {
+            "start_date": "January 2020",
+            "end_date": "Present",
+            "job": "Programming Language Development",
+            "role": "Functional Programming Lab",
+            "description": [
+                "Implementing Hazel, a new live functional programming environment featuring typed holes.",
+                "Collaborating with 30+ contributors to develop using a dialect of Ocaml (ReasonML)."
+            ]
+        },
+        {
+            "start_date": "May 2019",
+            "end_date": "Present",
+            "job": "UMSI Research",
+            "role": "Principal Investigator",
+            "description": [
+                "Designing and implementing a non-biased method of determining the perception gap in opposing opinions.",
+                "Tackling reported opinion perception gaps of 20%+ and eliminating 10%+ coder disagreement rates from alternative methodologies.",
+                "Advised by Dr. Grant Schoenebeck of University of Michigan.",
+                "Developing full-stack using Django, Python, Bootstrap, and HTML/CSS to iteratively improve the interactive web application.",
+                "Published the web application on Heroku through its CLI with a Postgres backend and forwarded multiple domains. "
+            ]
+        },
+        {
+            "start_date": "January 2019",
+            "end_date": "Present",
+            "job": "Instructional Aide",
+            "role": "Discrete Math and Intro to Programming",
+            "description": [
+                "Lead sessions for 100+ students and weekly discussions of 40+ students with 900+ students enrolled for the course.",
+                "Taught for Winter '19, Spring '19, Fall '19, and Winter '20 with every student evaluation field median score above 4.0/5.0."
+            ]
+        },
+        {
+            "start_date": "January 2019",
+            "end_date": "Present",
+            "job": "Vivica",
+            "role": "Co-founder and CTO",
+            "description": [
+                "Founded a Blockchain startup to solve opioid over-prescription and doctor shopping that caused the Opioid Crisis.",
+                "Produced a prototype using C++ and Qt GUI and won $9,000+ from multiple competitions such as the International Blockchain Olympiad."
+            ]
+        },
+        {
+            "start_date": "May 2016",
+            "end_date": "May 2019",
+            "job": "Bioinformatics Research",
+            "role": "Discrete Math and Intro to Programming",
+            "description": [
+                "Co-authored 6 publications in peer-reviewed journals with 3 lead authorships and replaced a decades-old evolutionary model.",
+                "\"A tRNA- and Anticodon-Centric View of the Evolution of Aminoacyl-tRNA Synthetases, tRNAomes, and the Genetic Code\" in Life, May 2019",
+                "\"Type-II tRNAs and Evolution of Translation Systems and the Genetic Code\" in International Journal of Molecular Sciences, October 2018",
+                "\"Aminoacyl-tRNA synthetase evolution and sectoring of the genetic code\" in Transcription, May 2018",
+                "\"Homology threading to generate RNA polymerase structures\" in Protein Expression and Purification, February 2018",
+                "\"Rooted tRNAomes and evolution of the genetic code\" in Transcription, February 2018",
+                "\"tRNA evolution from the proto-tRNA minihelix world\" in Transcripotion, January 2016",
+                "Optimized the position of zinc molecules in proteins by using JAVA to calculate 3D coordinates to be represented in PDB format.",
+                "Scraped databases using Beautifulsoup and Python to statistically calculate evolutionary distances against randomly mutated sequences.",
+                "Visualized the statistical analysis from Python scripts using R and iGraph library."
+            ]
+        }
+    ],
+
+    "projects": [
+        {
+            "proj_link": null,
+            "code_link": "https://github.com/Yunif3/MTicket_Matcher",
+            "proj_img": "./poly.png",
+            "title": "M Ticket Matcher",
+            "stacks": [
+                "Python", "Django"
+            ],
+            "description": [
+                "Centralized highly scattered student football ticket buy and sell offers with certified users.",
+                "Used Django framework with PostgreSQL and Bootstrap with custom CSS to be deployed on Heroku.",
+                "Hosted 50+ offers and 200+ contact requests within a month."
+            ]
+        },
+        {
+            "proj_link": null,
+            "code_link": "https://github.com/Yunif3/logical_equivalence_calculator",
+            "proj_img": "./poly.png",
+            "title": "Logical Equivalence Calculator",
+            "stacks": [
+                "C++"
+            ],
+            "description": [
+                "Created a calculator that solves and explains logical equivalence problems to help EECS 203 students.",
+                "Parsed logical equivalence expressions in a n-ary tree and minimized the number of elements."
+            ]
+        },
+        {
+            "proj_link": null,
+            "code_link": "https://github.com/Yunif3/websocket_connect_five",
+            "proj_img": "./poly.png",
+            "title": "Real-time Multiplayer Gomoku",
+            "stacks": [
+                "Python", "JS"
+            ],
+            "description": [
+                "Developed the game using Javascript and integrated Django and websocket using Django Channels to relay data in real-time."
+            ]
+        },
+        {
+            "proj_link": null,
+            "code_link": "https://github.com/Yunif3/blockchain_game",
+            "proj_img": "./poly.png",
+            "title": "Platform Independent Digital Creatures",
+            "stacks": [
+                "C++", "Solidity"
+            ],
+            "description": [
+                "Designed and developed a decentralized system to allow permanent ownership of digital assets and creatures.",
+                "Wrote the specs and created a C++ model for my team and later ported to Ethereum smart contracts using Solidity."
+            ]
+        }
+    ],
+
+    "awards": [
+        {
+            "title": "Gartner Scholars",
+            "description": "Chosen as one of 20 Gartner Sophomore Leadership Summit Sophomore Scholars."
+        },
+        {
+            "title": "Patents",
+            "description": "Invented 2 patent-pending items on smartphones storage and battery and reached out to the VP of Product Development of companies."
+        },
+        {
+            "title": "Terminal Live",
+            "description": "Won $3,000 by placing 3rd at Terminal Live hosted by Correlation One."
+        },
+        {
+            "title": "Optimize",
+            "description": "Won $4,500+ for \"Tokenized voting\" project through Optimize, an on-campus incubator."
+        },
+        {
+            "title": "Siemens Competition",
+            "description": "Selected as a Siemens Research Competition semifinalist from 1800+ international projects for a paper on tRNA evolution."
+        },
+        {
+            "title": "IBCOL",
+            "description": "Won $4000+ by placing first and getting best Medical application award at International Blockchain Olympiad."
+        }
+    ]
+}

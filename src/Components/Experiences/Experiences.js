@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import "./Experiences.css"
+import data from "../../data.json"
 
 class ExperienceBlock extends Component {
     // TODO maybe have it read this info from json instead
@@ -11,7 +12,7 @@ class ExperienceBlock extends Component {
                     <p className="timeline-event-thumbnail">{this.props.start_date} - {this.props.end_date}</p>
                     <h3>{this.props.job}</h3>
                     <h4>{this.props.role}</h4>
-                    <p>{this.props.description}</p>
+                    <ul className="timeline-event-description">{this.props.description}</ul>
                 </div>
             </li>
         );
@@ -20,31 +21,25 @@ class ExperienceBlock extends Component {
 
 class Experiences extends Component {
     render () {
+        let blocks = data["experiences"].map((info) => {
+            let desc_list = info.description.map((item) => {
+                return (<li>{item}</li>);
+            });
+            return (
+                <ExperienceBlock
+                        start_date = {info.start_date}
+                        end_date = {info.end_date}
+                        job = {info.job}
+                        role = {info.role}
+                        description = {desc_list}
+                />
+            );
+        });
         return (
             <div id={this.props.id} className="experiences-wrapper">
                 <div id="experiences-title">Experiences</div>
                 <ul className="timeline">
-                    <ExperienceBlock
-                        start_date = "January 1"
-                        end_date = "Present"
-                        job = "Instructional Aide"
-                        role = "EECS 203 and 183 IA"
-                        description = "I taught for blah blah blah blabh blah blah blah blabhblah blah blah blabhblah blah blah blabhblah blah blah blabhblah blah blah blabhblah blah blah blabhblah blah blah blabh"
-                    />
-                    <ExperienceBlock
-                        start_date = "January 1"
-                        end_date = "Present"
-                        job = "Instructional Aide"
-                        role = "EECS 203 and 183 IA"
-                        description = "I taught for blah blah blah blabh blah blah blah blabhblah blah blah blabhblah blah blah blabhblah blah blah blabhblah blah blah blabhblah blah blah blabhblah blah blah blabh"
-                    />
-                    <ExperienceBlock
-                        start_date = "January 1"
-                        end_date = "Present"
-                        job = "Instructional Aide"
-                        role = "EECS 203 and 183 IA"
-                        description = "I taught for blah blah blah blabh blah blah blah blabhblah blah blah blabhblah blah blah blabhblah blah blah blabhblah blah blah blabhblah blah blah blabhblah blah blah blabh"
-                    />
+                    {blocks}
                 </ul>              
             </div>
         );
